@@ -10,7 +10,7 @@ from pyteal import *
 def main(RECEIVER_1, RECEIVER_2):
 
     # Write your code here
-    program = Return(Int(0))
+    program = If(Txn.receiver() == Addr(RECEIVER_1)).Then(And((Txn.arg[0] == Bytes("rcv1password")),(Txn.amount() <= Int(5)))).ElseIf(Txn.receiver() == Addr(RECEIVER_2)).Then(And((Txn.arg[0] == Bytes("rcv2password")),(Txn.amount() <= Int(10))))
 
     return program
 

@@ -1,0 +1,14 @@
+filename: pyteal_program.py
+timestamp: 1665417762
+compiled: BoEAQw==
+compiledHash: WCNFQ6ULAOHE22NUJTWSON72UKKY42KLWUFWVW2TO325ABSFY7XMUIMBSI
+srcHash: 3543116325
+base64ToBytes:
+  - 6
+  - 129
+  - 0
+  - 67
+tealCode: |
+  #pragma version 6
+  int 0
+  return

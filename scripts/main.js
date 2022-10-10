@@ -12,7 +12,7 @@ async function run (runtimeEnv, deployer) {
     RECEVIER_1: acc1.addr,
     RECEIVER_2: acc2.addr
   }
-  
+
   // create logic sig for sender account
   const masterLogicSig = await deployer.mkDelegatedLsig(
     "pyteal_program.py",
